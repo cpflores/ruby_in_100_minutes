@@ -8,7 +8,10 @@ class PersonalChef
   end
 
   def make_eggs(quantity)
-    puts "Making you #{quantity} eggs!"
+    quantity.times do
+      puts "Making an egg."
+    end
+    puts "I'm done!"
     return self
   end
 
