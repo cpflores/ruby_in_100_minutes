@@ -27,4 +27,13 @@ class PersonalChef
   	puts "Happy #{today}! It is the #{day_of_year} day of the #{year}."
   	return self
   end
+
+  def gameplan(meals)
+    meals.each do |meal|
+      puts "We'll have #{meal}..."
+    end
+
+    all_meals = meals.join(", ")
+    puts "In summary: #{all_meals}"
+  end
 end
