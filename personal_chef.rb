@@ -11,7 +11,7 @@ class PersonalChef
     quantity.times do
       puts "Making an egg."
     end
-    puts "I'm done!"
+    puts "I'm done Chug!"
     return self
   end
 
@@ -35,5 +35,12 @@ class PersonalChef
 
     all_meals = meals.join(", ")
     puts "In summary: #{all_meals}"
+  end
+
+  def inventory
+    produce = {apples: 3, oranges: 1, carrots: 12}
+    produce.each do |item, quantity|
+      puts "There are #{quantity} #{item} in the fridge."
+    end
   end
 end
