@@ -55,5 +55,22 @@ class PersonalChef
       puts "Hot! Hot! Hot!"
     end
     return self
+  
+  def countdown(counter)
+    while counter > 0
+      puts "The counter is #{counter}"
+      counter = counter - 1
+    end
+    return self
   end
+  
+  def make_toast(color)
+    if color.nil?
+      puts "How am I supposed to make nothingness toast?"
+    else
+      puts "Making your toast #{color}!"
+    end
+    return self
+  end
+
 end
